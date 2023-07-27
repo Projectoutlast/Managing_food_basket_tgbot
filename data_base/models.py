@@ -23,7 +23,7 @@ class CustomerSetting(Base):
     id = Column(Integer, primary_key=True)
     customer_id = Column(Integer, ForeignKey("customers.id"))
     basket_limit = Column(Float, nullable=True)
-    bot_mode = Column(Enum, default=BotMode.normal)
+    bot_mode = Column(Enum, default=BotMode.NORMAL)
     language = Column(Enum)
 
     customer = relationship("Customer", back_populates="customer_setting")

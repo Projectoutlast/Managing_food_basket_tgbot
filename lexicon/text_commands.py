@@ -58,11 +58,15 @@ COMMAND_TEXT = {
 
         'purchase_start': "Процесс покупки запущен.",
 
-        'current_limit_of_basket': "Текущий лимит корзины",
+        'current_limit_of_basket': "Текущий лимит корзины: ",
 
-        'total_amount_basket': "Общая сумма корзины",
+        'enter_price': "Введите цену\n\n"
+                       "Ввод должен содержать только цифры, без пробелов и любых символов, как показано в примере\n"
+                       "«1», «1.00», «1.36», «1,00», «1,36»",
 
-        'until_set_limit': "До установленного лимита",
+        'total_amount_basket': "Общая сумма корзины: ",
+
+        'until_set_limit': "До установленного лимита: ",
 
         'exceeding_limit': "Превышение установленного лимита",
 
@@ -71,6 +75,9 @@ COMMAND_TEXT = {
         'silent_mode_on': "Был установлен беззвучный режим.",
 
         'normal_mode_on': "Установлен нормальный режим",
+
+        'echo_message': "Я не понимаю, что вы имеете в виду.\n\n"
+                         "Используйте команды ниже.",
     },
     'en': {
         'start': "Hello!\nI'm simple helper for your purchases in a supermarket.\n"
@@ -110,8 +117,7 @@ COMMAND_TEXT = {
                 "/en - set up english language"
                 "/ru - установить русский язык",
 
-        'settings': "Welcome to settings!\n\n"
-                    "Set up your food basket limit and bot mode using in-line buttons below.\n"
+        'settings': "Set up your food basket limit and bot mode using in-line buttons below.\n"
                     "For cancel settings process push the «Cancel» button below.",
 
         'set_up_basket_limit': "Set up food basket limit\n\n"
@@ -121,7 +127,8 @@ COMMAND_TEXT = {
         'set_up_basket_limit_done': "Basket limit was set.",
 
         'invalid_input_basket_limit': "Invalid value entered.\n\n"
-                                      "Enter must contain only digits, without spaces or any character as shown "
+                                      "Enter must contain only digits,\n"
+                                      "without spaces or any character as shown "
                                       "in the example\n"
                                       "«1», «1.00», «1.36», «1,00», «1,36»",
 
@@ -132,11 +139,16 @@ COMMAND_TEXT = {
 
         'purchase_start': "Purchasing process is started.",
 
-        'current_limit_of_basket': "Current limit of basket",
+        'current_limit_of_basket': "Current limit of basket: ",
 
-        'total_amount_basket': "Total amount basket",
+        'enter_price': "Enter price\n\n"
+                       "Enter must contain only digits,\n"
+                       "without spaces or any character as shown in the example\n"
+                       "«1», «1.00», «1.36», «1,00», «1,36»",
 
-        'until_set_limit': "Until set limit",
+        'total_amount_basket': "Total amount basket: ",
+
+        'until_set_limit': "Until set limit: ",
 
         'exceeding_limit': "Exceeding the established limit",
 
@@ -145,5 +157,7 @@ COMMAND_TEXT = {
         'silent_mode_on': "Silent mode was set.",
 
         'normal_mode_on': "Normal mode was set",
+
+        'echo_message': "I don't know what you mean. Use are commands below.",
     },
 }

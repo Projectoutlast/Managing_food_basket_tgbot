@@ -2,10 +2,10 @@ from enum import Enum
 
 
 class BotMode(Enum):
-    silent: str = 'silent'
-    normal: str = 'normal'
+    SILENT: str = 'silent'
+    NORMAL: str = 'normal'
 
 
 class BotLanguage(Enum):
-    ru: str = 'ru'
-    en: str = 'en'
+    RU: str = 'ru'
+    EN: str = 'en'

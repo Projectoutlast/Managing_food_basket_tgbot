@@ -7,8 +7,11 @@ class CheckBasketLimitInput(BaseFilter):
         pass
 
     async def __call__(self, message: Message) -> bool | dict[str, float]:
+        input_message = message.text
+        if ',' in input_message:
+            input_message = input_message.replace(',', '.')
         try:
-            result = float(message.text)
+            result = float(input_message)
             return {"basket_limit": result}
         except ValueError:
             return False
