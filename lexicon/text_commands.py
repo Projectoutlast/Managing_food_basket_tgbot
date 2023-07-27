@@ -38,7 +38,7 @@ COMMAND_TEXT = {
 
         'settings': "Добро пожаловать в настройки!\n\n"
                     "Настройте лимит продуктовой корзины и режим бота, используя встроенные кнопки ниже.\n"
-                    "Для отмены процесса настройки нажмите кнопку «Отмена» ниже или отправьте мне команду /cancel.",
+                    "Для отмены процесса настройки нажмите кнопку «Отмена»",
 
         'set_up_basket_limit': "Установить лимит продуктовой корзины\n\n"
                                "Введите номер без пробела.\n"
@@ -112,7 +112,7 @@ COMMAND_TEXT = {
 
         'settings': "Welcome to settings!\n\n"
                     "Set up your food basket limit and bot mode using in-line buttons below.\n"
-                    "For cancel settings process push the «Cancel» button below or send me /cancel command.",
+                    "For cancel settings process push the «Cancel» button below.",
 
         'set_up_basket_limit': "Set up food basket limit\n\n"
                                "Enter number without space.\n"

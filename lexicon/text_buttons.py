@@ -1,5 +1,7 @@
 BUTTON_TEXT = {
-    'ru': {
+    'en': {
+        'back': "Back",
+        'cancel': "Cancel",
         'change_basket_limit': "Change basket limit",
         'help': "Help",
         'info': "Info",
@@ -7,10 +9,14 @@ BUTTON_TEXT = {
         'purchase_end': "End purchasing",
         'purchase_start': "Start purchasing",
         'settings': "Settings",
+        'set_up_basket_limit': "Set up basket limit",
+        'set_up_mode': "Set up bot mode",
         'silent': "Silent mode",
 
     },
-    'en': {
+    'ru': {
+        'back': "Назад",
+        'cancel': "Отмена",
         'change_basket_limit': "Изменить лимит корзины",
         'help': "Помощь",
         'info': "Информация",
@@ -18,6 +24,8 @@ BUTTON_TEXT = {
         'purchase_end': "Завершить покупку",
         'purchase_start': "Начать покупку",
         'settings': "Настройки",
+        'set_up_basket_limit': "Установить лимит корзины",
+        'set_up_mode': "Установить режим работы бота",
         'silent': "Бесшумный режим",
     },
 }

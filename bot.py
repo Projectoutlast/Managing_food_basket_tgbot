@@ -6,7 +6,7 @@ from aiogram import Bot, Dispatcher
 from config import config
 from data_base.base import engine
 from data_base.models import *
-from handlers import command_handlers
+from handlers import callback_handlers, command_handlers
 
 
 logger = logging.getLogger(__name__)
@@ -23,6 +23,7 @@ async def main():
     bot = Bot(token=config.TG_BOT.TOKEN)
     dp = Dispatcher()
 
+    dp.include_router(callback_handlers.router)
     dp.include_router(command_handlers.router)
 
     await dp.start_polling(bot)
