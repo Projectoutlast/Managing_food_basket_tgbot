@@ -34,7 +34,9 @@ settings_markup = create_inline_kb_from_buttons(3, [set_up_basket_btn, set_up_mo
 
 set_up_mode_markup = create_inline_kb_from_buttons(2, [normal_btn, silent_btn])
 
-start_purchase_markup = create_inline_kb_from_buttons(2, [info_btn, purchase_end_btn,
-                                                          silent_btn, change_basket_limit_btn])
+purchase_markup = create_inline_kb_from_buttons(3, [info_btn, purchase_end_btn,
+                                                    silent_btn])
 
 end_purchase_markup = create_inline_kb_from_buttons(2, [main_menu_btn, purchase_start_btn, settings_btn, help_btn])
+
+echo_markup = create_inline_kb_from_buttons(4, [main_menu_btn, settings_btn, purchase_start_btn, help_btn])

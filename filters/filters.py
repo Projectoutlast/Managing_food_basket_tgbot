@@ -12,6 +12,6 @@ class CheckBasketLimitInput(BaseFilter):
             input_message = input_message.replace(',', '.')
         try:
             result = float(input_message)
-            return {"basket_limit": result}
+            return {"user_input": result}
         except ValueError:
             return False

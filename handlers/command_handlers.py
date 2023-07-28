@@ -13,13 +13,21 @@ router = Router()
 
 @router.message(CommandStart())
 async def cmd_start(message: Message):
-    await message.answer(text=COMMAND_TEXT['en']['start'],
-                         reply_markup=start_markup)
+    await message.answer(text=COMMAND_TEXT['en']['start'], reply_markup=start_markup)
 
 
 @router.message(Command(commands='help'))
 async def cmd_help(message: Message):
-    await message.answer(text=COMMAND_TEXT['en']['help'],
-                         reply_markup=back_markup)
+    await message.answer(text=COMMAND_TEXT['en']['help'], reply_markup=back_markup)
 
 
+@router.message(Command(commands='ru'))
+async def switch_ru_language(message: Message):
+    await message.answer(text=f'{COMMAND_TEXT["ru"]["switch_ru"]}\n'
+                              f'{COMMAND_TEXT["ru"]["start"]}', reply_markup=start_markup)
+
+
+@router.message(Command(commands='en'))
+async def switch_en_language(message: Message):
+    await message.answer(text=f'{COMMAND_TEXT["en"]["switch_en"]}\n'
+                              f'{COMMAND_TEXT["en"]["start"]}', reply_markup=start_markup)

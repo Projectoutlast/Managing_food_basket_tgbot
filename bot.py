@@ -23,8 +23,8 @@ async def main():
     bot = Bot(token=config.TG_BOT.TOKEN)
     dp = Dispatcher()
 
-    dp.include_router(callback_handlers.router)
     dp.include_router(command_handlers.router)
+    dp.include_router(callback_handlers.router)
 
     await dp.start_polling(bot)
 

@@ -33,7 +33,7 @@ COMMAND_TEXT = {
                 "(эта информация хранится внутри ваших отправленных сообщений), и использовать язык на основе "
                 "этой информации. Но иногда могут быть ошибки, и если они есть, вы можете просто отправить мне одну "
                 "из следующих команд:\n"
-                "/en - установить английский язык"
+                "/en - установить английский язык\n"
                 "/ru - установить русский язык",
 
         'settings': "Добро пожаловать в настройки!\n\n"
@@ -64,6 +64,8 @@ COMMAND_TEXT = {
                        "Ввод должен содержать только цифры, без пробелов и любых символов, как показано в примере\n"
                        "«1», «1.00», «1.36», «1,00», «1,36»",
 
+        'enter_price_short': 'Введите цену',
+
         'total_amount_basket': "Общая сумма корзины: ",
 
         'until_set_limit': "До установленного лимита: ",
@@ -78,6 +80,10 @@ COMMAND_TEXT = {
 
         'echo_message': "Я не понимаю, что вы имеете в виду.\n\n"
                          "Используйте команды ниже.",
+
+        'done': "Готово.",
+
+        'switch_ru': 'Вы переключились на русский язык.'
     },
     'en': {
         'start': "Hello!\nI'm simple helper for your purchases in a supermarket.\n"
@@ -114,7 +120,7 @@ COMMAND_TEXT = {
                 "(this information is stored inside your sent messages) and use language based on this information. "
                 "But sometimes there can be mistakes, and if there are, "
                 "you can just send me one of the next commands:\n"
-                "/en - set up english language"
+                "/en - set up english language\n"
                 "/ru - установить русский язык",
 
         'settings': "Set up your food basket limit and bot mode using in-line buttons below.\n"
@@ -146,6 +152,8 @@ COMMAND_TEXT = {
                        "without spaces or any character as shown in the example\n"
                        "«1», «1.00», «1.36», «1,00», «1,36»",
 
+        'enter_price_short': 'Enter price',
+
         'total_amount_basket': "Total amount basket: ",
 
         'until_set_limit': "Until set limit: ",
@@ -159,5 +167,9 @@ COMMAND_TEXT = {
         'normal_mode_on': "Normal mode was set",
 
         'echo_message': "I don't know what you mean. Use are commands below.",
+
+        'done': "Done.",
+
+        'switch_en': 'You switched to english language',
     },
 }
