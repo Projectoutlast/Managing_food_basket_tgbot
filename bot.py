@@ -10,17 +10,17 @@ from handlers import callback_handlers, command_handlers
 
 
 logger = logging.getLogger(__name__)
-Base.metadata.create_all(engine)
 
 
 async def main():
+    Base.metadata.create_all(engine)
     logging.basicConfig(
         level=logging.INFO,
         format='%(filename)s:%(lineno)d #%(levelname)-8s '
                '[%(asctime)s] - %(name)s - %(message)s')
     logger.info('Starting bot')
 
-    bot = Bot(token=config.TG_BOT.TOKEN)
+    bot = Bot(token=config.TG_BOT.TOKEN, parse_mode='Markdown')
     dp = Dispatcher()
 
     dp.include_router(command_handlers.router)
