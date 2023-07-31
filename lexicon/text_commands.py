@@ -83,7 +83,11 @@ COMMAND_TEXT = {
 
         'done': "Готово.",
 
-        'switch_ru': 'Вы переключились на русский язык.'
+        'switch_ru': 'Вы переключились на русский язык.',
+
+        'dont_know': "Я не знаю, что ты имеешь в виду",
+
+        'settings_was_set': "Настройки были установлены",
     },
     'en': {
         'start': "*Hello!*\U0001F44B\n\nI'm simple helper for your purchases in a supermarket.\n"
@@ -173,5 +177,9 @@ COMMAND_TEXT = {
         'done': "Done.",
 
         'switch_en': 'You switched to english language',
+
+        'dont_know': "I don't know what you mean",
+
+        'settings_was_set': "Settings were set up",
     },
 }

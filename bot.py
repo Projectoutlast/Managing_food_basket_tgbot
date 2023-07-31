@@ -6,7 +6,7 @@ from aiogram import Bot, Dispatcher
 from config import config
 from data_base.base import engine
 from data_base.models import *
-from handlers import callback_handlers, command_handlers
+from handlers import command_handlers, callback_handlers
 
 
 logger = logging.getLogger(__name__)
